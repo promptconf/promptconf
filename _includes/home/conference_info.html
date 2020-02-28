@@ -7,7 +7,7 @@
     <div class='conference-info__date-location'>
 
         <p class='conference-info__date-location__details'>
-            Saturday, September 28, 2019<br>
+            {{ site.eventStartDate | date: "%A, %B %-d, %Y" }}<br>
             10AM<br>
             Hosted by ActiveCampaign<br>
             Chicago, IL
@@ -23,7 +23,7 @@
             <p>Join about 150 of your peers who are equally excited about tech! All attendees must comply with our <a href={{ site.baseurl }}{{ '/conduct/' }}>Code of Conduct</a>.</p>
         </div>
         <div class='conference-info__cta__button-wrap'>
-            <a class='button gtm-cta' href='https://ti.to/prompt-conf/2019'>Register</a>
+            <a class='button gtm-cta' href={{ site.registrationURL }} target="_blank">Register</a>
         </div>
     </div>
 
